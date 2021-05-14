@@ -4,8 +4,8 @@ const swiper = new Swiper(".swiper-container", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button__next",
-    prevEl: ".slider-button__prev",
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
   },
   autoplay: {
     delay: 5000,
