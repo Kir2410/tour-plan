@@ -13,6 +13,9 @@ function init() {
     size: "small",
   });
   myMap.controls.add("fullscreenControl");
-  var placemark = new ymaps.Placemark([8.012417, 98.295894]);
+  var placemark = new ymaps.Placemark([8.012417, 98.295894], {
+    balloonContentHeader: "Banyan Tree Phuket Hotel",
+    balloonContentBody: "Отель",
+  });
   myMap.geoObjects.add(placemark);
 }
