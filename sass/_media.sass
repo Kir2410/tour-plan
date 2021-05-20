@@ -4,7 +4,8 @@
     .slider
         width: 590px
 @media (max-width: 992px)
-    .container
+    .container,
+    .newsletter-wrapper
         max-width: 700px
     .logo
         width: 132px
@@ -36,6 +37,10 @@
         margin-bottom: 30px
     .booking, .map
         width: 340px
+    .newsletter
+        padding: 92px 0 93px 0
+        &-title
+            margin: 0
 
 @media (max-width: 767px)
     .container
@@ -104,6 +109,13 @@
             margin-bottom: 20px
         .map
             width: 100%
+    .newsletter
+        &-wrapper
+            flex-direction: column
+            max-width: 576px
+            width: 91%
+            align-items: flex-start
+
 @media (max-width: 576px)
     .swiper-wrapper
         height: 179px
@@ -111,10 +123,26 @@
         height: 210px
     .map
         height: 173px
-    .container
+    .container,
+    .newsletter-wrapper
         width: 87%
     .logo
         width: 99px
+    .subscribe
+        max-width: 280px
+
 @media (max-width: 320px)
     .container
         width: 87%
+    .newsletter
+        padding: 76px 0 83px 0
+        &-title
+            font-size: 20px
+            line-height: 25px
+            &__strong
+                margin-top: 5px
+                font-size: 30px
+                line-height: 38px
+    .subscribe
+        margin-top: 37px
+        width: 100%
