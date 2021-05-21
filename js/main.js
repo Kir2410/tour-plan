@@ -27,8 +27,5 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   autoplay: {
     delay: 5000,
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
 });
+$(".newsletter").parallax({ imageSrc: "img/newsletter-bg.jpg" });
