@@ -32,6 +32,7 @@
         width: 100%
         height: 100%
     .hotel
+        padding-bottom: 60px
         &-grid
             flex-direction: column
         &-right
@@ -41,6 +42,10 @@
             margin-bottom: 30px
     .booking, .map
         width: 340px
+    .booking
+        padding-right: 22px
+        &__price
+            height: 59px
     .newsletter
         padding: 92px 0 93px 0
         &-title
@@ -50,6 +55,11 @@
         &-slider
             &__item
                 max-width: 580px
+                &:after, &::before
+                    display: none
+        &__title
+            font-size: 30px
+            line-height: 38px
     .activities
         padding-bottom: 70px
         &-wrapper
@@ -139,8 +149,6 @@
         &-slider
             &__item
                 padding: 0 30px 30px
-                &:after, &::before
-                    display: none
             &__button
                 top: 45px
                 &-prev
@@ -155,6 +163,8 @@
         width: 48%
 
 @media (max-width: 576px)
+    .hotel
+        padding-bottom: 40px
     .swiper-wrapper
         height: 179px
     .booking
@@ -164,6 +174,8 @@
     .container,
     .newsletter-wrapper
         width: 87%
+    .newsletter
+        padding: 76px 0 83px 0
     .logo
         width: 99px
     .subscribe
@@ -184,6 +196,7 @@
         &__title
             font-size: 18px
             line-height: 23px
+            margin-bottom: 36px
     .card
         width: 100%
 
@@ -191,7 +204,7 @@
     .container
         width: 87%
     .newsletter
-        padding: 76px 0 83px 0
+
         &-title
             font-size: 20px
             line-height: 25px
