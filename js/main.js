@@ -29,3 +29,10 @@ const reviewsSlider = new Swiper(".reviews-slider", {
   },
 });
 $(".newsletter").parallax({ imageSrc: "img/newsletter-bg.jpg" });
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("клик по кнопке меню");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom__visible");
+});
