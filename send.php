@@ -24,15 +24,15 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    // $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'kkv2410@gmail.com'; // Логин на почте
     $mail->Password   = 'Am620el6'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
+    $mail->SMTPSecure = 'PHPMailer::ENCRYPTION_STARTTLS';
+    $mail->Port       = 587;
     $mail->setFrom('kkv2410@gmail.com', 'Кирилл Коршунов'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
